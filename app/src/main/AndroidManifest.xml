@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Triangulo4A">
         <activity
-            android:name=".MainActivity"
+            android:name=".Vistas.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
