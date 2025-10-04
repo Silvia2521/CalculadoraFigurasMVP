@@ -15,11 +15,11 @@ class TrianguloModelo: ContratoTriangulo.Modelo {
 
     override fun tipo(l1: Float, l2: Float, l3: Float): String {
         if(l1==l2 && l2==l3 )
-            return "\n El Tipo de trianfulo es Equilatero"
+            return "\n El Tipo de triangulo es Equilatero"
         else if(l1!=l2 && l2!=l3 && l1!=l3)
-            return "\n El Tipo de trianfulo es escaleno"
+            return "\n El Tipo de triangulo es Escaleno"
         else
-            return "\n El Tipo de trianfulo es isoceles"
+            return "\n El Tipo de triangulo es Isoceles"
     }
 
     override fun valida(l1: Float, l2: Float, l3: Float): Boolean {

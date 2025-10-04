@@ -15,8 +15,7 @@ import kotlin.math.sqrt
 
 class MainActivity : AppCompatActivity(), ContratoTriangulo.Vista {
 
-    //declaramos el textarea del resultado para poder manipularlo desde las funciones del contrato
-    //de la vista
+
     private lateinit var txvResultado: TextView
     private lateinit var presentador: ContratoTriangulo.Presentador
 
@@ -49,21 +48,21 @@ class MainActivity : AppCompatActivity(), ContratoTriangulo.Vista {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //listener del boton para calcular el perimetro
+
         btnPerimetro.setOnClickListener{
             val l1=txtl1.text.toString().toFloat()
             val l2=txtl2.text.toString().toFloat()
             val l3=txtl3.text.toString().toFloat()
             presentador.perimetro(l1,l2,l3)
         }
-        //listener del boton para definir el tipo de triangulo
+
         btnTipo.setOnClickListener {
             val l1=txtl1.text.toString().toFloat()
             val l2=txtl2.text.toString().toFloat()
             val l3=txtl3.text.toString().toFloat()
             presentador.tipo(l1,l2,l3)
         }
-        //listener del boton para calcular el area llamando a una funcion
+
         btnArea.setOnClickListener {
             val l1=txtl1.text.toString().toFloat()
             val l2=txtl2.text.toString().toFloat()
