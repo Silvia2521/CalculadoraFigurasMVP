@@ -32,5 +32,10 @@
             android:name=".Vistas.CirculoActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".Vistas.HexagonoActivity"
+            android:exported="false" />
+
+
     </application>
 </manifest>

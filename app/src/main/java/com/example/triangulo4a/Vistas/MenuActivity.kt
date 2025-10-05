@@ -17,6 +17,7 @@ class MenuActivity : AppCompatActivity() {
         val btnTriangulo: Button = findViewById(R.id.btnTriangulo)
         val btnRectangulo: Button = findViewById(R.id.btnRectangulo)
         val btnCirculo: Button = findViewById(R.id.btnCirculo)
+        val btnHexagono: Button = findViewById(R.id.btnHexagono)
 
 
         btnTriangulo.setOnClickListener {
@@ -30,6 +31,11 @@ class MenuActivity : AppCompatActivity() {
 
         btnCirculo.setOnClickListener {
             startActivity(Intent(this, CirculoActivity::class.java))
+        }
+
+
+        btnHexagono.setOnClickListener {
+            startActivity(Intent(this, HexagonoActivity::class.java))
         }
     }
 }
